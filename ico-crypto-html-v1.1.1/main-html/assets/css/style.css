@@ -804,12 +804,6 @@ select:focus { outline: none; border: none; }
 .header-image-alt { 
     /*min-width: 600px;*/
     width:100%;
-
- }
-
-/*====================intro section bg======================*/
-#intro{
-  background: #FCF5E5;
 }
 
 .header-image-element { position: absolute; width: 72px; }
@@ -1197,15 +1191,46 @@ select:focus { outline: none; border: none; }
 .single-roadmap-alt h5, .single-roadmap-alt h6 { font-size: 1.2em; font-weight: 300; color: rgba(255, 255, 255, 0.5); margin-bottom: 10px; position: relative; }
 .single-roadmap-alt h5:before, .single-roadmap-alt h6:before { position: absolute; right: -14px; top: -51px; height: 70px; width: 1px; background: #7a0fff; content: ""; }
 
+
+/*===================Add mobile app bg section bg==============================*/
+.app-section { position: relative; 
+                 background: #2C2B2B;
+                 }
+.app-section:before{
+  content: "";
+  background: #2C2B2B;
+  height:20%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.app-section:after { content: ""; 
+                       /*background: linear-gradient(to top, #1b30a4 15%, rgba(13, 66, 178, 0) 100%); */
+                       background: #2C2B2B;
+                       height: 80%; width: 100%; position: absolute; bottom: 0; left: 0;}
+
+/*=======================mobile app bg section bg end==========================*/
+
+
+
 @media only screen and (max-width: 767px) { .roadmap-list-alt .owl-prev { left: 0; }
   .roadmap-list-alt .owl-next { right: 0; }
   .single-roadmap-alt:after { right: calc(50% - 16px); }
   .single-roadmap-alt h5:before, .single-roadmap-alt h6:before { right: calc(50% + 2px); height: 45px; } }
 /* @v1.1.0 s */
 /*! 10.0 - TEAM SECTION */
+
+/*===================TEAM SECTION BG================*/
+
+
+
 .io-azure .team-section { position: relative; }
 .io-azure .team-section:before { content: ""; background: url(../images/pattern-azure-dark.png) 50% 50% no-repeat; background-size: contain; height: 100%; width: 100%; position: absolute; top: 0; left: 0; opacity: .5; }
-.io-azure .team-section.bg-fixed:before { background-attachment: fixed; background-size: cover; }
+.io-azure .team-section.bg-fixed:before { 
+  /*background-attachment: fixed; */
+  background-color: red;
+  background-size: cover; }
 
 .team-member { margin: 50px 15px 50px 50px; padding: 130px 20px 25px 25px; position: relative; max-width: 190px; flex-grow: 1; }
 .section-bg .team-member { background: #0b0c22; }
