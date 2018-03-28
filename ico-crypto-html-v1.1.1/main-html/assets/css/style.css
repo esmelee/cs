@@ -108,8 +108,8 @@ a:hover, a:focus, a:active { outline: 0; color: #8255fd; }
 
 .container { position: relative; z-index: 5; }
 
-.section-bg { background: #10122d; }
-.theme-light .section-bg { background: #eff6ff; }
+.section-bg { background: #FCF5E5; }
+.theme-light .section-bg { background:#FCF5E5; }
 .io-azure .section-bg { background: #0d42b2; }
 
 .section-bg-alt { background: #0b0c22; }
@@ -129,7 +129,9 @@ a:hover, a:focus, a:active { outline: 0; color: #8255fd; }
 .section-bg-btoa { background-image: linear-gradient(to bottom, #0b0c22 0%, #10122d 70%); }
 .theme-light .section-bg-btoa { background-image: linear-gradient(to bottom, #fff 0%, #eff6ff 70%); }
 
-.section-pro { background: #fff !important; }
+/*========================Change section background color==========================*/
+.section-pro { background: #FCF5E5 !important; }
+/*===============================end===============================================*/
 
 .section-pro-alt { background: #ebf3fc !important; }
 
@@ -1021,6 +1023,12 @@ select:focus { outline: none; border: none; }
   .btns { margin: 0 -3px; }
   .btns li { margin: 10px 3px; } }
 /*! 07.0 - FEATURES SECTION */
+
+/*=========================FEATURE SECTION BG===========================*/
+
+
+/*=======================FEATURE SECTION BG END=========================*/
+
 .text-block { /* @v1.1.0 s */ }
 .text-block p:not(.lead) { color: #6e7e98; }
 .text-block ul:not(.btns) { margin-bottom: 20px; }
@@ -1221,15 +1229,34 @@ select:focus { outline: none; border: none; }
 /* @v1.1.0 s */
 /*! 10.0 - TEAM SECTION */
 
-/*===================TEAM SECTION BG================*/
+/*============================TEAM SECTION BG==============================*/
+.team-section { position: relative; 
+                 background: #FCF5E5;
+                 }
+.team-section:before{
+  content: "";
+  background: #FCF5E5;
+  height:20%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.team-section:after { content: ""; 
+                       /*background: linear-gradient(to top, #1b30a4 15%, rgba(13, 66, 178, 0) 100%); */
+                       background: #FCF5E5;
+                       height: 80%; width: 100%; position: absolute; bottom: 0; left: 0;}
 
-
+/*===========================TEAM SECTION BG END=============================*/
 
 .io-azure .team-section { position: relative; }
-.io-azure .team-section:before { content: ""; background: url(../images/pattern-azure-dark.png) 50% 50% no-repeat; background-size: contain; height: 100%; width: 100%; position: absolute; top: 0; left: 0; opacity: .5; }
+.io-azure .team-section:before { content: ""; 
+  /*background: url(../images/pattern-azure-dark.png) 50% 50% no-repeat; */
+  background: #FCF5E5;
+  background-size: contain; height: 100%; width: 100%; position: absolute; top: 0; left: 0; opacity: .5; }
 .io-azure .team-section.bg-fixed:before { 
-  /*background-attachment: fixed; */
-  background-color: red;
+  background-attachment: fixed;
+  background: #FCF5E5; 
   background-size: cover; }
 
 .team-member { margin: 50px 15px 50px 50px; padding: 130px 20px 25px 25px; position: relative; max-width: 190px; flex-grow: 1; }
@@ -1333,6 +1360,26 @@ select:focus { outline: none; border: none; }
   .partner-list-s2 li:first-child { width: 100%; text-align: center; } }
 /* @v1.1.0 e */
 /*! 12.0 - FAQ SECTION */
+/*===============================FAQ SECTION BG==========================*/
+
+.faq-section { position: relative; 
+                 background: #2C2B2B;
+                 }
+.faq-section:before{
+  content: "";
+  background: #2C2B2B;
+  height:21%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.faq-section:after { content: ""; 
+                       /*background: linear-gradient(to top, #1b30a4 15%, rgba(13, 66, 178, 0) 100%); */
+                       background: #2C2B2B;
+                       height: 80%; width: 100%; position: absolute; bottom: 0; left: 0;}
+/*==============================FAQ SECTION BG END=======================*/
+
 .accordion .card { background-color: #171a40; border: none; border-bottom: 1px solid #10122d; border-radius: 0; }
 .accordion .card .card-header { position: relative; font-size: 1em; padding: 0; border-bottom: none; background: transparent; }
 .accordion .card .card-header a { color: #fff; font-weight: 500; padding: 15px 30px; display: block; margin-top: 0; cursor: pointer; }
@@ -1366,7 +1413,32 @@ select:focus { outline: none; border: none; }
 .io-azure .section-pro .single-faq p, .io-azure .section-pro-alt .single-faq p { color: #637097; }
 
 /*! 13.0 - CONTACT SECTION */
-.contact-section { overflow: hidden; }
+/*========================CONTACT SECTION BG============================*/
+
+
+
+.contact-section { position: relative; 
+                 background: #FCF5E5;
+                 overflow: hidden;
+                 }
+.contact-section:before{
+  content: "";
+  background: #FCF5E5;
+  height:21%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.contact-section:after { content: ""; 
+                       /*background: linear-gradient(to top, #1b30a4 15%, rgba(13, 66, 178, 0) 100%); */
+                       background: #FCF5E5;
+                       height: 80%; width: 100%; position: absolute; bottom: 0; left: 0;}
+
+
+/*========================CONTACT SECTION BG END============================*/
+
+
 
 .contact-info { margin: 0 -30px; padding-bottom: 60px; display: flex; /* @v1.1.0 s */ /* @v1.1.0 e */ }
 .contact-info li { margin: 0 30px; }
