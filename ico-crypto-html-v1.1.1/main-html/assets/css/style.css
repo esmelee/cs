@@ -799,7 +799,19 @@ select:focus { outline: none; border: none; }
 .header-image-icon { position: absolute; top: 32%; width: 30px; }
 .header-image .left-icon { left: 44%; margin-left: -1px; animation: jumping 1s linear 0s infinite alternate; }
 .header-image .right-icon { right: 41%; margin-right: -5px; margin-top: 5px; animation: jumping 1s linear .5s infinite alternate; }
-.header-image-alt { min-width: 1050px; }
+
+/*===================intro img=========================*/
+.header-image-alt { 
+    /*min-width: 600px;*/
+    width:100%;
+
+ }
+
+/*====================intro section bg======================*/
+#intro{
+  background: #FCF5E5;
+}
+
 .header-image-element { position: absolute; width: 72px; }
 .header-image-element-1 { left: 43%; bottom: 21%; }
 .header-image-element-2 { left: 61%; bottom: 30%; }
@@ -1106,8 +1118,12 @@ select:focus { outline: none; border: none; }
 .single-chart h2, .single-chart h3, .single-chart h4 { padding-bottom: 40px; }
 
 /*! 09.0 - ROADMAP SECTION */
-.roadmap-section.section-pro, .roadmap-section.section-pro-alt { position: relative; }
-.roadmap-section.section-pro:before, .roadmap-section.section-pro-alt:before { content: ""; background: url(../images/pattern-azure-light.png) 50% 50% no-repeat fixed; background-size: cover; height: 100%; width: 100%; position: absolute; top: 0; left: 0; opacity: .5; }
+/*================Token section bg ========================*/
+.roadmap-section.section-pro, .roadmap-section.section-pro-alt { position: relative;}
+.roadmap-section.section-pro:before, .roadmap-section.section-pro-alt:before { content: ""; 
+  /*background: url(../images/pattern-azure-light.png) 50% 50% no-repeat fixed; */
+  background: #FCF5E5;
+  background-size: cover; height: 100%; width: 100%; position: absolute; top: 0; left: 0; /*opacity: .5;*/ }
 
 .roadmap-list { margin-bottom: 230px; position: relative; }
 .roadmap-list:after { position: absolute; left: 50%; bottom: 0; height: 1px; width: 100vw; content: ""; transform: translateX(-50%); background: #7a0fff; }
