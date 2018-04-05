@@ -151,7 +151,7 @@
 		$count_token.each(function() {
 			var $self = $(this), datetime = $self.attr("data-date");
 			$self.countdown(datetime).on('update.countdown', function(event) {
-				$(this).html(event.strftime('' + '<div class="col"><span class="countdown-time countdown-time-first">%D</span><span class="countdown-text">Days</span></div>' + '<div class="col"><span class="countdown-time">%H</span><span class="countdown-text">Hours</span></div>' + '<div class="col"><span class="countdown-time">%M</span><span class="countdown-text">Minutes</span></div>' + '<div class="col"><span class="countdown-time countdown-time-last">%S</span><span class="countdown-text">Seconds</span></div>'));
+				$(this).html(event.strftime('' + '<div class="col"><span class="countdown-time countdown-time-first">%D</span><span color="white",class="countdown-text">Days</span></div>' + '<div class="col"><span class="countdown-time">%H</span><span color="white",class="countdown-text">Hours</span></div>' + '<div class="col"><span class="countdown-time">%M</span><span color="white",class="countdown-text">Minutes</span></div>' + '<div class="col"><span class="countdown-time countdown-time-last">%S</span><span color="white",class="countdown-text">Seconds</span></div>'));
 			});
 		});
 		
