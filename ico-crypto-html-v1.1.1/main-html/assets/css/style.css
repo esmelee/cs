@@ -1030,7 +1030,7 @@ select:focus { outline: none; border: none; }
 /*=======================FEATURE SECTION BG END=========================*/
 
 .text-block { /* @v1.1.0 s */ }
-.text-block p:not(.lead) { color: #6e7e98; }
+.text-block p:not(.lead) { color: #fff; }
 .text-block ul:not(.btns) { margin-bottom: 20px; }
 .text-block ul:not(.btns) li { position: relative; line-height: 2; padding-left: 22px; color: #6e7e98; }
 .text-block ul:not(.btns) li:before { content: ""; background:#CEAB5C; height: 5px; width: 5px; border-radius: 50%; position: absolute; top: 13px; left: 0; }
@@ -1196,7 +1196,7 @@ select:focus { outline: none; border: none; }
 .single-roadmap-alt.gradiant-atoc:before { background-image: linear-gradient(to right, #46bdf4 0%, #2b56f5 100%); }
 .single-roadmap-alt.gradiant-atoc:after { border-color: #2b56f5; }
 .single-roadmap-alt.gradiant-atoc h5:before, .single-roadmap-alt.gradiant-atoc h6:before { background: #2b56f5; }
-.single-roadmap-alt h5, .single-roadmap-alt h6 { font-size: 1.2em; font-weight: 300; color: rgba(255, 255, 255, 0.5); margin-bottom: 10px; position: relative; }
+.single-roadmap-alt h5, .single-roadmap-alt h6 { font-size: 1.2em; font-weight: 300; color: rgba(206, 171, 92, 1); margin-bottom: 10px; position: relative; }
 .single-roadmap-alt h5:before, .single-roadmap-alt h6:before { position: absolute; right: -14px; top: -51px; height: 70px; width: 1px; background: #7a0fff; content: ""; }
 
 
@@ -1217,7 +1217,8 @@ select:focus { outline: none; border: none; }
                        /*background: linear-gradient(to top, #1b30a4 15%, rgba(13, 66, 178, 0) 100%); */
                        background: #2C2B2B;
                        height: 80%; width: 100%; position: absolute; bottom: 0; left: 0;}
-
+/*Change social media icon color*/
+.btns li a .fa { font-size: 16px; color:#CEAB5C;}
 /*=======================mobile app bg section bg end==========================*/
 
 
@@ -1893,8 +1894,11 @@ select:focus { outline: none; border: none; }
   color:#CEAB5C;
 }
 
+
 /*Team section*/
 .t-title{
   color:#CEAB5C;
 }
 /** END */
+
+
