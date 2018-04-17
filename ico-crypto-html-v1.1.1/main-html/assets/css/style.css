@@ -808,6 +808,27 @@ select:focus { outline: none; border: none; }
     width:100%;
 }
 
+
+/*============================intro section BG==============================*/
+.into-section { position: relative; 
+                 background: #FCF5E5;
+                 }
+.into-section:before{
+  content: "";
+  background: #FCF5E5;
+  height:20%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.into-section:after { content: ""; 
+                       /*background: linear-gradient(to top, #1b30a4 15%, rgba(13, 66, 178, 0) 100%); */
+                       background: #FCF5E5;
+                       height: 80%; width: 100%; position: absolute; bottom: 0; left: 0;}
+
+/*===========================INTRO SECTION BG END=============================*/
+
 .header-image-element { position: absolute; width: 72px; }
 .header-image-element-1 { left: 43%; bottom: 21%; }
 .header-image-element-2 { left: 61%; bottom: 30%; }
